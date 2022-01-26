@@ -39,3 +39,17 @@ https://reactjs.org/docs/events.html
 header 3, events
 
 ### commit 03
+
+commitName: State
+
+State: On a class base component we get the state by default
+
+State: On a functional component we don0t get the state by default,
+we will need to use hooks to create that state behavior
+
+State: in React is a way to create a dataBase in the component
+
+State: is just an object with tons of properties, each property may
+be an array, another object, boolean and many more
+
+header 4, state
