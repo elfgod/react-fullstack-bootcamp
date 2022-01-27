@@ -9,7 +9,7 @@ Feature 2: onClick button, counter it counts 1 value higher
 everytime you click it,
 */
 
-class Header1 extends React.Component {
+class Header4 extends React.Component {
 
   state = {
     title: 'Keywords are here:',
@@ -62,4 +62,4 @@ class Header1 extends React.Component {
  };
 };
 
-export default Header1;
+export default Header4;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+const Header1 = () => {
 
   const getTheYear = () => {
     const newDate = new Date();
@@ -33,4 +33,4 @@ let styles = {
   }
 }
 
-export default Header;
+export default Header1;

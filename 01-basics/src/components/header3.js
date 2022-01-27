@@ -23,7 +23,7 @@ by doing it the app won't fire the function right away, it will wait until
 we do something
 */
 
-class Header1 extends React.Component {
+class Header3 extends React.Component {
   // Feature 2
   inputChangeHandler1() {
     console.log('i was changed!');
@@ -65,4 +65,4 @@ class Header1 extends React.Component {
  };
 };
 
-export default Header1;
+export default Header3;

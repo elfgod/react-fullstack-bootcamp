@@ -53,3 +53,7 @@ State: is just an object with tons of properties, each property may
 be an array, another object, boolean and many more
 
 header 4, state
+
+### commit 4
+
+commitName: Props part1
