@@ -73,3 +73,7 @@ ES6 JavaScript
 ### commit 7
 
 commitName: React children
+
+### commit 8
+
+commitName: Filtering the news
