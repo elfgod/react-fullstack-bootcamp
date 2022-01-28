@@ -36,7 +36,10 @@ class App extends React.Component {
       <Header5 />
       {/* Passing data JSON to the NewsList component */}
       {/* <NewsList news={this.state.news} /> */}
-      <NewsList news={ news } />
+      <NewsList news={ news } >
+        <b2 />
+        <h2>i am a children</h2>
+      </NewsList>
       <br />
       <Header4 />
       <br></br>

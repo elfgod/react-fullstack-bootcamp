@@ -69,3 +69,7 @@ commitName: Props part3
 Class Component: All classes by default have a constructor,
 and on the constructor i am getting the props, this is pure
 ES6 JavaScript
+
+### commit 7
+
+commitName: React children
