@@ -8,6 +8,7 @@ import Header3 from './components/header3';
 import Header4 from './components/header4';
 import Header5 from './components/header5';
 import NewsList from './components/news_list';
+import Footer from './components/footer';
 
 // Importing the data base json 
 import JSON from './db.json';
@@ -15,7 +16,8 @@ import JSON from './db.json';
 class App extends React.Component {
 
   state = {
-    news: JSON
+    news: JSON,
+    footerText: 'i am a happy footer'
   }
 
   render() {
@@ -24,11 +26,17 @@ class App extends React.Component {
 
     // Getting the data from the state
     console.log(this.state.news);
+
+    // Create an alias for the props
+    const { news, footerText } = this.state;
   return (
     <>
+      {/* <Footer footerText={this.state.footerText} /> */}
+      <Footer footerText={ footerText } />
       <Header5 />
       {/* Passing data JSON to the NewsList component */}
-      <NewsList news={this.state.news} />
+      {/* <NewsList news={this.state.news} /> */}
+      <NewsList news={ news } />
       <br />
       <Header4 />
       <br></br>

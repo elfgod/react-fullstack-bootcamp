@@ -57,3 +57,15 @@ header 4, state
 ### commit 4
 
 commitName: Props part1
+
+### commit 5
+
+commitName: Props part2
+
+### commit 6
+
+commitName: Props part3
+
+Class Component: All classes by default have a constructor,
+and on the constructor i am getting the props, this is pure
+ES6 JavaScript
