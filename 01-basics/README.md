@@ -19,6 +19,10 @@ mkdir 01-basics
 npx create-react-app .
 ```
 
+## 01 BASICS
+
+### 01 starts here
+
 ### commit 01
 
 commitName: Components: Functional & Class, Adding some styles: Inline & External file
@@ -77,3 +81,10 @@ commitName: React children
 ### commit 8
 
 commitName: Filtering the news
+
+### commit 9
+
+commitName: More on styling
+
+Header 4, using ternary operator to change the state,
+to change an inline class or a className

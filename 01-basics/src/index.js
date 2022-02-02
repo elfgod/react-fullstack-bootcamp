@@ -8,6 +8,7 @@ import Footer from './components/footer';
 
 // Importing the data base json 
 import JSON from './db.json';
+import Header4 from './components/header4';
 
 class App extends React.Component {
 
@@ -46,6 +47,7 @@ class App extends React.Component {
     const { news, footerText, filtered } = this.state;
   return (
     <>
+      <Header4 />
       <Header5 
         keywords={ this.getKeywords }
       />

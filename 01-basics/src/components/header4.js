@@ -12,6 +12,7 @@ everytime you click it,
 class Header4 extends React.Component {
 
   state = {
+    active: 'active',
     title: 'Keywords are here:',
     keyword: '',
     count: 0
@@ -19,7 +20,11 @@ class Header4 extends React.Component {
 
   // Feature 1
   inputChangeHandler = (event) => {
+    // swapping classes with ternary operator
+    const value = event.target.value === '' ? 'active' : 'not-active';
+
     this.setState({
+      active: value,
       keywords: event.target.value
     })
   }
@@ -45,7 +50,8 @@ class Header4 extends React.Component {
   return (
     <>
     <h1>Header4</h1>
-    <header>
+    {/* <header style={{background: `${this.state.active ? 'red' : 'blue'}`}}> */}
+    <header className={this.state.active}>
       <div className="logo">Logo</div>
       <input
         onChange={this.inputChangeHandler}
