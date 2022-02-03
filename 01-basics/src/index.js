@@ -5,17 +5,18 @@ import './styles/style.css';
 import Header5 from './components/header5';
 import NewsList from './components/news_list';
 import Footer from './components/footer';
+import Life from './components/lifeCycle';
 
 // Importing the data base json 
 import JSON from './db.json';
-import Header4 from './components/header4';
 
 class App extends React.Component {
 
   state = {
     news: JSON,
     filtered: JSON,
-    footerText: 'i am a happy footer'
+    footerText: 'i am a happy footer',
+    active: true
   }
 
   getKeywords = (event) => {
@@ -47,7 +48,6 @@ class App extends React.Component {
     const { news, footerText, filtered } = this.state;
   return (
     <>
-      <Header4 />
       <Header5 
         keywords={ this.getKeywords }
       />
@@ -56,6 +56,10 @@ class App extends React.Component {
         <h2>i am a children</h2>
       </NewsList>
       <Footer footerText={ footerText } />
+      { this.state.active ? <Life /> : null }
+      <button
+        onClick={() => this.setState({ active: !this.state.active }) }
+      >Action</button>
       <br />
     </>
   )
