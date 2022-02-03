@@ -88,3 +88,15 @@ commitName: More on styling
 
 Header 4, using ternary operator to change the state,
 to change an inline class or a className
+
+### commit 10
+
+commitName: Lifecycles part 1
+
+Lifecycles only works on class components
+
+### commit 11
+
+commitName: Lifecycles part 2
+
+Lifecycles only works on class components
