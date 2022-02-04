@@ -95,8 +95,14 @@ commitName: Lifecycles part 1
 
 Lifecycles only works on class components
 
+https://reactjs.org/docs/react-component.html
+
+## 02 HOOKS
+
 ### commit 11
 
-commitName: Lifecycles part 2
+commitName:
 
-Lifecycles only works on class components
+https://reactjs.org/docs/hooks-intro.html
+
+I can use useState , as many as i wish
