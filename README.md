@@ -101,8 +101,19 @@ https://reactjs.org/docs/react-component.html
 
 ### commit 11
 
-commitName:
+commitName: UseState hook
 
 https://reactjs.org/docs/hooks-intro.html
 
-I can use useState , as many as i wish
+I can use useState , as many as i wish in a single file
+
+https://reactjs.org/docs/hooks-reference.html#usestate
+
+### commit 12
+
+commitName: UseEffect
+
+https://reactjs.org/docs/hooks-reference.html#useeffect
+
+useEffect is like a lifecycle
+I can add as many useEffect as i want, to listen to different states

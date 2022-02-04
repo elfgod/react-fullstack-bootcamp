@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
+import Post from './posts';
+
 
 const App = ({ initialCount }) => {
   // Passing props from index.js initialCount
@@ -52,6 +55,10 @@ const App = ({ initialCount }) => {
     ])
   }
 
+  const removePosts = () => {
+    setPosts([])
+  }
+
   // const restOne = () => {    
   //   setCount( prevCount => prevCount - 1);
     
@@ -61,6 +68,20 @@ const App = ({ initialCount }) => {
   //   // return prevCount - 1
   //   // });
   // }
+
+  useEffect(()=>{
+    // console.log('state: ', state);
+  },[state])
+  // Pass 2 arguments a func and an array
+  // Why an array? because i can listen for multiple things
+  useEffect(()=>{
+    // console.log('useEffect: change on state: ', state, posts);
+  },[state, posts])
+
+  // This will run only 1 time because i am not passing data in the array []
+  useEffect(()=>{
+    // console.log('MOUNTED');
+  },[])
 
   return (
     <>
@@ -77,14 +98,13 @@ const App = ({ initialCount }) => {
       <br /><br />
       <button onClick={ addOne2 }>Add one +1</button>
       <button onClick={ restOne2 }>Rest one -1</button>
+      
+      <br /><br />
+      <button onClick={ removePosts }>Remove posts</button>
 
       <h2 />
       { posts.map((post, i)=>(
-        <div key={i}>
-          <div>Name: { post.name }</div>
-          <div>Body: { post.body }</div>
-          <hr />
-        </div>
+        <Post post={post} key={i} />
       ))}
 
       <button
